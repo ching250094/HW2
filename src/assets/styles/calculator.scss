@@ -1,4 +1,46 @@
-body {
-    background: #000;
-    color: #FFF;
+$keys_width: calc( ( ( 100% / 4 ) - 15px ) + ( 15px / 4 ) );
+
+.wrapper {
+    padding: 50px 40px 20px;
+    height: 350px;
+    width: 250px;
+}
+
+.display {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FAFAFA;
+    color: #266B8A;
+    font-size: 46px;
+}
+
+.number_pad {
+    .keys {
+        background: #F3FAFF;
+        border-radius: 5px;
+        color: #B4B8BB;
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 15px;
+        margin-top: 10px;
+        line-height: 40px;
+        width: $keys_width;
+        text-align: center;
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &.zero {
+            width: calc( #{ $keys_width } * 2 + 15px );
+        }
+
+        &.functions {
+            background:#D9EFFF;
+            color: #94CFFE;
+        }
+        
+        &.equals {
+            margin-right: 0;
+        }
+    }
 }
