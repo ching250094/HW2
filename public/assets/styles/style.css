@@ -1,4 +1,4 @@
-body{background:#000;color:#FFF}
+.wrapper{padding:50px 40px 20px;height:350px;width:250px}.display{padding-bottom:10px;border-bottom:1px solid #FAFAFA;color:#266B8A;font-size:46px}.number_pad .keys{background:#F3FAFF;border-radius:5px;color:#B4B8BB;display:inline-block;font-size:18px;margin-right:15px;margin-top:10px;line-height:40px;width:calc( ( ( 100% / 4 ) - 15px ) + ( 15px / 4 ));text-align:center}.number_pad .keys:nth-child(4n){margin-right:0}.number_pad .keys.zero{width:calc( calc( ( ( 100% / 4 ) - 15px ) + ( 15px / 4 )) * 2 + 15px)}.number_pad .keys.functions{background:#D9EFFF;color:#94CFFE}.number_pad .keys.equals{margin-right:0}
 
 
 /*# sourceMappingURL=style.css.map*/

@@ -7,8 +7,7 @@ const Button = React.memo( ({
     value,
     doSetCalculation,
     doReset,
-    doCalculate,
-    state
+    doCalculate
 }) => {
     const onClick = ( val ) => {
         switch( val ) {
@@ -32,6 +31,8 @@ const Button = React.memo( ({
                 break;
             case 'AC':
                 doReset();
+                break;
+            default:
         }
     }
     return (
@@ -67,14 +68,14 @@ const Display = ({
 }) => {
     const [ state, setState ] = useState('0');
 
-    useEffect(() => {
+    useEffect( () => {
         if ( displayedNumber.length ) {
             setState( displayedNumber );
 
         } else if ( !displayedNumber && !formula ) {
             setState('0');
         }
-    })
+    }, [displayedNumber, formula] )
     return (
         <div className="display">
             { state }

@@ -3,7 +3,6 @@ export const getOperator = formula => {
 }
 
 export const convertToVaildFormula = ( formula, newValue ) => {
-    console.log(formula, newValue)
     return formula.replace( getOperator(formula), newValue ) 
 }
 
